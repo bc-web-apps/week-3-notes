@@ -19,12 +19,25 @@ To get started, you need to install Homebrew on your Mac. Homebrew is a package 
 
 ```
 
+### Installer PHP in Homebrew
+
+Now run this command:
+
+```bash
+brew install php
+```
+
+This will install PHP on your local machine through Homebrew. You can run `brew services list` to see all of the installed Homebrew packages.
+
 ### Installing Composer
 
 Composer is a PHP package manager. To install it you will need to follow the [instructions here.](https://getcomposer.org/doc/00-intro.md) Or run these commands:
 
 ```bash
-php composer-setup.php --install-dir=bin --filename=composer
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '48e3236262b34d30969dca3c37281b3b4bbe3221bda826ac6a9a62d6444cdb0dcd0615698a5cbe587c3f0fe57a54d8f5') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 ```
 
 Now run, this will make it available globally:
@@ -36,16 +49,6 @@ mv composer.phar /usr/local/bin/composer
 To check that things are working, type `composer` in your terminal in any directory: 
 
 ![composer](/src/composer.png)
-
-### Installer PHP in Homebrew
-
-Now run this command:
-
-```bash
-brew install php
-```
-
-This will install PHP on your local machine through Homebrew. You can run `brew services list` to see all of the installed Homebrew packages.
 
 ### Laravel Installer
 
