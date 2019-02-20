@@ -86,5 +86,7 @@ And you can now access this site by going to: http://blog.test in your web brows
 
 ## Deploying Laravel on Windows
 
-## Laravel File Structure Basics
+See this tutorial: https://medium.com/@eaimanshoshi/i-am-going-to-write-down-step-by-step-procedure-to-setup-homestead-for-laravel-5-2-17491a423aa
+
+## 
 
