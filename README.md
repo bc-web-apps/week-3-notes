@@ -83,6 +83,11 @@ laravel new blog
 ```
 
 And you can now access this site by going to: http://blog.test in your web browser.
+## Note: "laravel not found" "valet not found" errors:
+
+Run this command to make sure you don't get the dreaded `valet install not found` error:
+
+`echo "export PATH=$PATH:~/.composer/vendor/bin" >> ~/.bash_profile`
 
 ## Deploying Laravel on Windows
 
